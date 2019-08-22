@@ -1,12 +1,13 @@
 def square_array(array)
   # your code here
-  
-empty_array = []
-
-array.each do |num|
-  empty_array.push(num**2)
-end
-  return empty_array
- array.each{|array| puts "#{array}"} 
+  counter = 0
+ new_array = []
  
+ while counter < array.length do
+   new_array << array[counter]**2 
+   counter +=1
+end
+
+p new_array
+
 end
